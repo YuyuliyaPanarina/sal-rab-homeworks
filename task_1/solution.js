@@ -1,9 +1,11 @@
 function addInCartMessage(title, price) {
-    let productName = title;
-    let productPrice = price;
+  
+   let productName = title;
+   let productPrice = price;
+   let message;
+
 
     // Задание №1.1. Оповещение о добавлении в корзину
-
     // создайте переменную message
     // присвойте переменной message значение переменной productName
     // добавьте в конец переменной message пробел
@@ -47,4 +49,3 @@ function addInCartSumChange(sum, delta) {
 
     return newSumText;
 }
-
