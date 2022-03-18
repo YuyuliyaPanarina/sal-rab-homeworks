@@ -17,13 +17,13 @@ function calcShipping(sum, min, shipping) {
     // то shippingSum присвоить значение shippingPrice
 
     if (productsSum == 0) {
-        console.log(shippingSum=0);
+        shippingSum=0;
     }
     if (productsSum >= freeShippingMinSum) {
-        console.log(shippingSum=0);
+        shippingSum=0;
     }
     if (productsSum > 0 && productsSum < freeShippingMinSum) {
-        console.log(shippingSum=shippingPrice);
+        shippingSum=shippingPrice;
     }
 
 
@@ -46,7 +46,7 @@ function calcDiscount(sum, min, discount) {
     // иначе присвойте discountSum значение 0
     
     if (productsSum >= discountMinSum) {
-        console.log(discountSum = productsSum / 100 * discountPart);
+        discountSum = productsSum / 100 * discountPart;
     } else if (discountSum = 0);
 
     // Конец решения задания №2.2.
@@ -77,8 +77,7 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
     // создайте переменную freeShipping
     // запишите без использования if или любых других условий:
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
-    let freeShipping;
-    shippingSum == 0;
+    freeShipping = shippingSum == 0;
     freeShipping = !shippingSum;
     
 
